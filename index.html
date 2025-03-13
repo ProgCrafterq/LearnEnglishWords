@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учеба английских слов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="showWordsButton">Список слов</button>
+        <div class="word-box" id="wordBox"></div>
+        <div class="translation-box" id="translationBox"></div>
+    </div>
+    
+    <div id="wordListModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Список слов</h2>
+            <ul id="wordList"></ul>
+            <button id="addWordIcon">+</button>
+        </div>
+    </div>
+
+    <div id="addWordModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Добавить слово</h2>
+            <input type="text" id="englishWord" placeholder="English word">
+            <input type="text" id="russianWord" placeholder="Русский перевод">
+            <button id="addWordButton">Добавить</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
